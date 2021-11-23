@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "MarsRover.ConsoleApp": {
+      "commandName": "Project"
+    }
+  }
+}

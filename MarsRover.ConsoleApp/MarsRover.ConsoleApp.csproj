@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MarsRover.ConsoleApp</RootNamespace>
+    <AssemblyName>MarsRoverConsole</AssemblyName>
+    <StartupObject>Skykick.MarsRover.ConsoleApp.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Nito.AsyncEx.Context" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MarsRover.Framework\MarsRover.Framework.csproj" />
+  </ItemGroup>
+
+</Project>

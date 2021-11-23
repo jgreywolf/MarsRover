@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRover.ConsoleApp", "MarsRover.ConsoleApp\MarsRover.ConsoleApp.csproj", "{F3C09730-8132-4FBE-941B-CD906E3B481B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRover.Framework.Tests", "MarsRover.Framework.Tests\MarsRover.Framework.Tests.csproj", "{C60E64CB-1F04-4797-85F0-991DCA7F5E8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRover.Framework", "MarsRover.Framework\MarsRover.Framework.csproj", "{9519E8A1-E8AD-41A4-AE5B-A2A14D0BBC81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3C09730-8132-4FBE-941B-CD906E3B481B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C09730-8132-4FBE-941B-CD906E3B481B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C09730-8132-4FBE-941B-CD906E3B481B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C09730-8132-4FBE-941B-CD906E3B481B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60E64CB-1F04-4797-85F0-991DCA7F5E8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60E64CB-1F04-4797-85F0-991DCA7F5E8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60E64CB-1F04-4797-85F0-991DCA7F5E8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60E64CB-1F04-4797-85F0-991DCA7F5E8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9519E8A1-E8AD-41A4-AE5B-A2A14D0BBC81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9519E8A1-E8AD-41A4-AE5B-A2A14D0BBC81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9519E8A1-E8AD-41A4-AE5B-A2A14D0BBC81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9519E8A1-E8AD-41A4-AE5B-A2A14D0BBC81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DACE103E-F07D-4161-B965-6CB2321B32D2}
+	EndGlobalSection
+EndGlobal
