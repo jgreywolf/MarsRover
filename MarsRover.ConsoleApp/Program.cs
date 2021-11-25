@@ -1,23 +1,16 @@
 ﻿using MarsRover.Framework;
-using Nito.AsyncEx;
 using System;
-using System.Threading.Tasks;
 
 namespace MarsRover.ConsoleApp
 {
     internal class Program
     {
-        static async Task<int> MainAsync(string[] args)
-        {
-            RoverApplication app = new RoverApplication(new MissionController());
-            await app.Run();
-        }
-
         static int Main(string[] args)
         {
             try
             {
-                return AsyncContext.Run(() => MainAsync(args));
+                MissionControllerInterface app = new MissionControllerInterface(new MissionController());
+                return 1;
             }
             catch (Exception ex)
             {

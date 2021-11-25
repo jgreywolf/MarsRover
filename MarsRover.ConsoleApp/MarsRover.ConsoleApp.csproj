@@ -5,7 +5,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>MarsRover.ConsoleApp</RootNamespace>
     <AssemblyName>MarsRoverConsole</AssemblyName>
-    <StartupObject>Skykick.MarsRover.ConsoleApp.Program</StartupObject>
+    <StartupObject>MarsRover.ConsoleApp.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

@@ -15,7 +15,7 @@ namespace MarsRover.Framework.Tests
         {
             var expected = new Coordinates();
 
-            var rover = new Rover();
+            var rover = new Rover(1);
 
             rover.Coordinates.Should().BeEquivalentTo(expected);
         }
@@ -32,7 +32,7 @@ namespace MarsRover.Framework.Tests
         public void GivenARoverFacingEachDirection_WhenExecutingATurningCommand_ThenTheRoverShouldBeFacingTheCorrectDirection(int x, int y, Command commandType, Direction startingDirection, Direction expectedDirection)
         {
             var coords = new Coordinates(x, y);
-            var rover = new Rover(coords, startingDirection);
+            var rover = new Rover(1, coords, startingDirection);
             var command = new CommandFactory().GetCommand(startingDirection);
             rover.SetDirection(
                 commandType == Command.TurnLeft 
@@ -52,7 +52,7 @@ namespace MarsRover.Framework.Tests
         public void GivenARoverFacingEachDirection_WhenExecutingAMoveCommand_ThenTheRoverCoordinatesShouldBeUpdatedCorrectly(int x, int y, Direction startingDirection, int expectedX, int expectedY)
         {
             var coords = new Coordinates(x, y);
-            var rover = new Rover(coords, startingDirection);
+            var rover = new Rover(1, coords, startingDirection);
             var command = new CommandFactory().GetCommand(startingDirection);
             rover.SetCoordinates(command.Move(rover.Coordinates, _gridBounds));
 
@@ -69,7 +69,7 @@ namespace MarsRover.Framework.Tests
         public void GivenARoverFacingEachDirection_WhenExecutingAMoveCommandThatWouldMoveOutOfBounds_ThenShouldThrowException(int x, int y, Direction startingDirection)
         {
             var coords = new Coordinates(x, y);
-            var rover = new Rover(coords, startingDirection);
+            var rover = new Rover(1, coords, startingDirection);
             var command = new CommandFactory().GetCommand(startingDirection);
 
             if(startingDirection == Direction.N

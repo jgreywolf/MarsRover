@@ -1,8 +1,6 @@
 ﻿using MarsRover.Framework;
 using MarsRover.Framework.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace MarsRover.ConsoleApp
@@ -14,7 +12,7 @@ namespace MarsRover.ConsoleApp
         Error
     }
 
-    public class RoverApplication
+    public class MissionControllerInterface
     {
         private readonly IMissionController _missionController;
         private InputType _currentInputType;
@@ -22,7 +20,7 @@ namespace MarsRover.ConsoleApp
         private int _nextRoverId = 1;
         private int _currentRoverId = 0;
 
-        public RoverApplication(IMissionController missionController)
+        public MissionControllerInterface(IMissionController missionController)
         {
             _missionController = missionController;
         }
